@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+--orange:hsl(26, 100%, 55%);
+--orange-light:hsl(26, 100%, 55%, .4);
+--pale-orange:hsl(25, 100%, 94%);
+--vark-blue:hsl(220, 13%, 13%);
+--dark-blue:hsl(219, 9%, 45%);
+--grayish-blue:hsl(220, 14%, 75%);
+--light-grayish-blue:hsl(223, 64%, 98%);
+--white:hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center;
+padding:7rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+p{
+    font-size:16px;
+}
+
+/* Menu */
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grayish-blue);
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    padding:1rem;
+}
+
+.logo{
+    color: var(--vark-blue);
+    font-size:28px;
+    font-weight: bold;
+    padding-right: -30rem;
+}
+
+.image-profil{
+    display:inline-block;
+    margin-left: 15px;
+    max-width: 40px;
+    opacity: 95%;
+
+}
+
+.menu-derecha{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -300px;
+}
+
+nav ul{
+    display:flex;
+    padding:0.5rem;
+    list-style-type: none;
+    margin-right: 40rem;
+
+}
+
+nav ul li{
+margin-left:30px;
+
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    
+}
+
+/* Section 1 */
+.seccion-1{
+    display:flex;
+    flex-direction: row;
+    margin-top:5rem;
+    padding-left: 2rem;
+    
+}
+/* .slider-container{
+
+    position:relative;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+}
+.slide{
+    flex:1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.btn{
+ display:none
+}
+
+.seccion-1-imagenes{
+    display:flex;
+    flex-direction: column;
+     max-width: 30rem;
+    max-height: 30rem; 
+    
+}
+.btn:hover{
+    opacity:0.8;
+}
+
+.images-desktop{
+    display:flex;
+    padding:1rem;
+    max-width: 100%;
+    
+    border-radius: 50px;
+
+}
+
+.images-abajo-desktop{
+    display:flex;
+    margin-right: 10px;
+    margin-left:10px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    
+}
+.images:hover{
+    opacity:0.6;
+}
+.images{
+    display:flex;
+    margin-right: 10px;
+    margin-left:10px;
+    max-width: 45%;
+    max-height: 45%;
+    border-radius: 12px;
+}
+
+.container{
+    max-width: 40%;
+    display:flex;
+    flex-direction: column;
+    
+    margin-left:10%;
+    margin-top:4%;
+
+}
+
+.section-h4{
+text-transform: uppercase;
+color: var(--orange);
+letter-spacing: 2px;
+margin-bottom: -15px;
+opacity: 80%;
+}
+
+.section-h1{
+    font-size:45px;
+}
+.section-p{
+    color: var(--dark-blue);
+    opacity: 80%;
+    margin-top:-5px;
+    line-height: 25px;
+}
+
+.section-price{
+    display:flex;
+    align-items: center;
+}
+
+.section-precio-final{
+    font-size:30px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.section-precio-tachado{
+    margin-top:-15px;
+    color:var(--grayish-blue);
+    text-decoration: line-through;
+    opacity: 80%;
+    font-weight: bold;
+}
+
+.section-descuento{
+    color:var(--orange);
+   
+    background-color: var(--pale-orange);
+    border-spacing: 2px;
+    padding:5px;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+
+
+.section-quantity{
+    align-items: center;
+    background-color: var(--light-grayish-blue);
+    width: 50%;
+    justify-content: center;
+    padding: 1rem;
+    display: flex;
+    
+    border-radius: 1rem;
+}
+
+.boton-quantity{
+width: 100%;
+height: 100%;
+background-color: var(--light-grayish-blue);
+border:none;
+}
+.boton-quantity:hover{
+    opacity:0.7;
+    cursor:pointer;
+}
+
+.span-quantity{
+    margin-right:30%;
+    margin-left: 30%;
+    font-weight: bold;
+}
+
+.botton-add{
+    display:flex ; 
+    align-items: center;
+    background-color: var(--orange);
+    color:var(--white);
+    font-family:'Kumbh Sans', sans-serif ;
+    font-weight: bold;
+   border-radius: 15px;
+   border-color: var(--orange);
+   justify-content: center;
+   width: 100%;
+   margin-left: 10%;
+   border:none;
+   box-shadow: 0px 10px 25px var(--orange-light);
+   
+    
+}
+.botton-add:hover{
+        opacity:0.7;
+        cursor:pointer;
+}
+
+.section-add{
+    width: 100%;
+    
+}
+.section-final{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    
+    justify-content: space-between;
+    
+}
+
+.icon{
+    color:var(--white);
+    padding-right: 10px;
+}
+
+
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+@media screen and (max-width: 375px)  {
+    nav ul{
+        display:none;
+    }
+    
+    .section-quantity{
+        align-items: center;
+        background-color: var(--light-grayish-blue);
+        width: 90%;
+        justify-content: center;
+        
+        display: flex;
+        border-radius: 1rem;
+        margin-top:20px;
+    }
+    .section-final{
+        display:flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .botton-add{
+        display:flex ; 
+        align-items: center;
+        background-color: var(--orange);
+        color:var(--white);
+        font-family:'Kumbh Sans', sans-serif ;
+        font-weight: bold;
+       border-radius: 15px;
+       border-color: var(--orange);
+       justify-content: center;
+       margin-left:0;
+       border:none;
+       box-shadow: 0px 10px 25px var(--orange-light);
+       width: 100%;
+
+        
+    }
+    .section-add{
+        width: 100%;
+        margin-top: 8%;
+       
+        
+    }
+    .seccion-1{
+        display:flex;
+        flex-direction: column;
+        margin-left:-60px;
+        max-width:90%;
+        max-height: 90%;
+    }
+    .seccion-1-imagenes{
+        display:flex;
+        flex-direction: column;
+        max-width:100%;
+        max-height: 100%;
+        padding:0.5rem;
+    
+    }
+    .images-abajo-desktop{
+        display:flex;
+
+        max-width:100%;
+        max-height: 100%;
+    }
+    .images-desktop{
+        display:none;
+        padding:1rem;
+        max-width: 450px;
+        border-radius: 50px;
+        
+    }
+    .images{
+        display:flex;
+        margin-right: 10px;
+        margin-left:10px;
+        max-width: 96px;
+        max-height: 96px;
+        border-radius: 12px;
+        max-width:100%;
+        max-height: 100%;
+    }
+    .section-h4{
+        text-transform: uppercase;
+        color: var(--orange);
+        letter-spacing: 2px;
+        margin-bottom: 0px;
+        opacity: 80%;
+        font-size: 10px;
+        }
+        
+        .section-h1{
+            font-size:30px;
+        }
+        .section-p{
+            color: var(--dark-blue);
+            opacity: 80%;
+            margin-top:0px;
+            font-size:13px;
+            line-height: 20px;
+            
+        }
+        
+        .section-price{
+            display:flex;
+            align-items: center;
+    
+ 
+        }
+        .section-precio-tachado{
+            margin-top:-15px;
+            color:var(--grayish-blue);
+            text-decoration: line-through;
+            opacity: 80%;
+            font-weight: bold;
+            margin-left:200px;
+            margin-top: -45px;
+        }
+        .section-precio-final{
+            font-size:25px;
+            letter-spacing: 1px;
+            margin-right: 10px;
+        }
+        .section-descuento{
+            color:var(--orange);
+           
+            background-color: var(--pale-orange);
+            border-spacing: 2px;
+            padding:5px;
+            font-weight: bold;
+            border-radius: 5px;
+            letter-spacing: 0.5px;
+            font-size: 12px;
+        }
+
+        .btn{
+            position:absolute;
+            top:50%;
+            background-color: var(--white);
+            width: 34px;
+            height: 34px;
+            border-radius:50%;
+            display:grid;
+            place-items: center;
+            transform: translateY(-50%);
+            display: flex;
+        }
+        
+        .btn--left{
+            left: 320px;
+        }
+        .btn--right{
+            left: 100px;
+        }
+        
+}
